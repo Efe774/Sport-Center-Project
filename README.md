@@ -40,7 +40,7 @@ Bu projeyi yaparken fazlasıyla keyif aldım ve çok eğlendim, kendimi çok faz
 ---
 **💡 Not:** Bu proje tamamen **saf CSS** kullanılarak oluşturulmuştur, herhangi bir CSS kütüphanesi kullanılmamıştır.
 
-**Netlify Link**[sportcenterproject.netlify.app](https://sportcenterproject.netlify.app)
+**Netlify Link** - [sportcenterproject.netlify.app](https://sportcenterproject.netlify.app)
 
 ## 📌 Geliştiren
 👨‍💻 **[Ad]** - [Saim Efe Omağ](https://github.com/Efe774)
