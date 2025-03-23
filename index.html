@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Center</title> <!--Ana başlık kısmı-->
+    <link rel="stylesheet" href="./styles.css"> <!--Stil dosyası kısmı-->
+</head>
+<body>
+<div class="bg1"> <!--Arkaplan kısmı-->
+
+<header class="header" id="header"><!--Header başlangıç-->
+    
+    <img src="./resimler/Resimler/logo.png" alt="logo"> <i class="fa-solid fa-bars" id="hamburger" onclick="hambDisplay(true)"></i>
+
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#our-clases">Classes</a>
+        <a href="#trainer">Trainer</a>
+        <a href="#reviwe">Review</a>
+        <a href="#contact">Contact</a>
+        <a href="#" id="join">JOIN US</a>
+    </nav>
+
+    <ul class="navbar-tel hidden" id="navbar-tel">
+       <li><a href="#">Home</a></li><hr class="navbar-hr">
+       <li><a href="#our-clases">Classes</a></li><hr class="navbar-hr">
+       <li><a href="#trainer">Trainer</a></li><hr class="navbar-hr">
+       <li><a href="#reviwe">Review</a></li><hr class="navbar-hr">
+       <li><a href="#contact">Contact</a></li><hr class="navbar-hr">
+       <li><a href="#">JOIN US</a></li><hr class="navbar-hr">
+    </ul>
+
+</header><!--Header bitiş kısmı-->
+
+<section class="hero"><!--hero başlangıç kısmı-->
+    <div class="hero-texts">
+   <h3 class="hero-h3">POWERFULL</h3>
+   <h2 class="hero-h2">Group<br class="br-header"> Practice<br>With Trainer</h2>
+   <p class="hero-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore repellendus, totam nam aperiam iste libero velit culpa dolorum labore illum ut sint nihil corrupti minima ea maxime, saepe similique quidem.</p>
+    </div>
+    <div class="hero-title-btn">
+        <button class="sign-up">Sign Up</button>
+        <button class="details">Details</button>
+    </div>
+</section>
+</div><!--hero bitiş kısmı-->
+
+<section class="stats"><!--Stats başlangıç kısmı-->
+    <div><p>325 <br><span>Course</span></p></div>
+    <div><p>405 <br><span>WorkOut</span></p></div>
+    <div><p>305<br><span>Workinh Hour</span></p></div>
+    <div><p>705 <br><span>Happy Client</span></p></div>
+</section><!--stats bitiş kısmı-->
+
+<section class="classes" id="our-clases"><!--our classes başlangıç kısmı-->
+    <div class="title">
+        <h2>OUR CLASSES <br></h2>
+        <hr class="title-underline">
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam itaque fugiat in ullam.</P>
+            <div class="classes-btn">
+                <button onclick="changecontent(0,this)" class="btn">Yoga</bn>
+                <button onclick="changecontent(1,this)" class="btn">Group</button>
+                <button onclick="changecontent(2,this)" class="btn">Solo</button>
+                <button onclick="changecontent(3,this)" class="btn">Stretching</button>
+            </div>
+    </div>
+    <div class="classes-bottom">
+        <div class="classes-bottom-txt">
+            <h3 id="classes-title">Why Are Your Yoga?</h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis ipsam sed dicta quos voluptas? Saepe aliquam quae libero maxime, minus iste officiis nobis molestiae, velit.</p>
+
+            <h3 id="classes-sec-title">When Comes Yoga Your Time.</h3>
+
+            <p class="classes-bottom-paragraf"> 
+                Saturday-Sunday: 8:00am - 10:00am<br>
+                Monday-Tuesday: 10:00am - 12:00am<br>
+                Wednesday-Friday: 03:00pm - 06:00pm<br>
+            </p>
+        </div>
+
+        <div class="classes-imgs">
+        <img src="./resimler/Resimler/yoga.jpg" alt="yoga girl" id="classes-pic">
+        </div>
+
+    </div>
+</section><!--our classes bitiş kısmı-->
+
+<section class="bmi-calculator"><!--bmi hesaplayıcı başlangıç kısmı-->
+
+    <div class="bmi-text">
+        <h2>BMI Calculator</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur accusamus iure officiis distinctio optio placeat quae commodi sapiente vitae consequatur facere minus, error minima illum delectus tempore velit nam.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur sapiente odit, nam reprehenderit dolores, ut harum doloribus recusandae dolorum corporis corrupti eaque odio blanditiis ratione excepturi libero natus dolorem! Vero!</p>
+        <div class="div-input">
+            <div class="input-inline">
+                <input type="number" name="height" id="height" class="bmi-height" placeholder="Your height">
+                <span>cm</span>
+            </div>
+            <div class="input-inline">   
+                <input type="number" name="weight" id="weight" class="bmi-weight" placeholder="Your weight">
+                <span>kg</span>
+            </div>   
+        </div>
+    </div>
+
+    <div class="your-bmi">
+        <h2>Your BMI</h2>
+            <div class="bmi-image-container">
+                <img src="./resimler/Resimler/bmi-index.jpg" alt="bmi" class="bmi-image img-fluid">
+                <div id="bmi-arrow">🔺</div>
+            </div>
+    </div>
+
+</section><!--bmi hesaplayıcı ibitş kısmı-->
+
+<section class="our-best-trainers" id="trainer"><!--our best trainers başlangıç kısmı-->
+    <div class="title">
+        <h2>OUR BEST TRAINERS</h2>
+        <hr class="title-underline">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos  laudantium blanditiis repellat veniam <br> molestias mollitia, nihil unde. </p>
+    </div>
+    
+    <div class="trainers">
+        <div class="trainer-wrapper">
+            <div class="side-box">
+                <img  src="./resimler/Resimler/trainer1.jpg" alt="" class="Yoga Trainer Emily Johnson" loading="lazy">
+                <div class="trainer-info">
+                    <h5>Emily Johnson</h5>
+                    <p>Yoga Trainer</p>
+                </div>
+            </div>
+        </div>
+        <div class="trainer-wrapper"> 
+            <div class="side-box">
+                <img  src="./resimler/Resimler/trainer2.jpg" alt="Conditioning Trainer John Smith" loading="lazy">
+                <div class="trainer-info">
+                    <h5>John Smith</h5>
+                    <p>Conditioning Trainer</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="trainer-wrapper"> 
+            <div class="side-box">
+                <img  src="./resimler/Resimler/trainer3.jpg" alt=" Cardio Trainer Jane Doe" loading="lazy">
+                <div class="trainer-info">
+                    <h5>Jane Doe</h5>
+                    <p>Cardio Trainer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+</section><!--our best trainers bitiş kısmı-->
+
+<section class="purchase"><!--purchase başlangıç kısmı-->
+
+    <div class="title">
+        <h2>PURCHASE FROM US</h2>
+        <hr class="title-underline">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos  laudantium blanditiis repellat veniam <br> molestias mollitia, nihil unde. </p>
+    </div>
+
+    <div class="content-purchase">
+
+        <div class="card">
+            <img src="./resimler/Resimler/purchase1.jpg" class="purchase-imgs" alt="purchase img">
+            <div class="purchase-texts">
+                <h4>Kattlebel / 5kg</h4>
+                <p> <span style="text-decoration: line-through;">89,99$</span> / 59,99$ </p>
+                <p class="credi"><i class="fa-solid fa-cart-shopping"></i>Add To Card</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./resimler/Resimler/purchase2.jpg" class="purchase-imgs" alt="purchase img">
+            <div class="purchase-texts">
+                <h4>Treadmill</h4>
+                <p> <span style="text-decoration: line-through;">899,99$</span> / 599,99$ </p>
+                <p class="credi"><i class="fa-solid fa-cart-shopping"></i>Add To Card</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./resimler/Resimler/purchase3.jpg" class="purchase-imgs" alt="purchase img">
+            <div class="purchase-texts">
+                <h4>Adjustble Dumbbell</h4>
+                <p> <span style="text-decoration: line-through;">89,99$</span> / 59,99$ </p>
+                <p class="credi"><i class="fa-solid fa-cart-shopping"></i>Add To Card</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./resimler/Resimler/purchase4.jpg" class="purchase-imgs" alt="purchase img">
+            <div class="purchase-texts">
+                <h4>kattlebel / 3kg</h4>
+                <p> <span style="text-decoration: line-through;">89,99$</span> / 59,99$ </p>
+                <p class="credi"><i class="fa-solid fa-cart-shopping"></i>Add To Card</p>
+                
+            </div>
+        </div>
+    </div>
+    
+</section><!--purchase bitiş kısmı-->
+
+<section class="reviwe-client" id="reviwe"><!--reviwe başlangıç kısmı-->
+    
+    <div class="title">
+        <h2>Review Client</h2>
+        <hr class="title-underline">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos  laudantium blanditiis repellat veniam <br> molestias mollitia, nihil unde. </p>
+    </div>
+
+    <div class="reviwe-area">
+        <div class="reviewer">
+            <div class="review-title"><img src="./resimler/Resimler/client1.jpg" alt="reviewer img">  <h4>Diet Expert <br><span style="font-size: medium;"> CFO </span></h4></div>
+
+            <p class="review-parag triangle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quam magnam deserunt natus error molestias nisi optio illum tenetur illo qui quod praesentium, cupiditate, iste accusantium cum nihil exercitationem nobis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quia sequi distinctio nostrum, delectus libero deserunt cum minus, nam harum nulla animi laborum tempore est fuga facilis sint corporis porro.</p>
+        </div>
+        <div>
+            <div class="reviewer">
+                <div class="review-title"> <img src="./resimler/Resimler/client2.jpg" alt="reviewer img"> <h4>Diet Expert <br><span style="font-size: medium;"> CFO </span></h4> </div>
+    
+                <p class="review-parag triangle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum quam magnam deserunt natus error molestias nisi optio illum tenetur illo qui quod praesentium, cupiditate, iste accusantium cum nihil exercitationem nobis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem quia sequi distinctio nostrum, delectus libero deserunt cum minus, nam harum nulla animi laborum tempore est fuga facilis sint corporis porro.</p>
+            </div>
+        </div>
+    </div>
+</section><!--reviwe bitiş kısmı-->
+
+<section class="contact-us" id="contact"><!--contact başlangıç kısmı-->
+
+    <div class="title">
+        <h2>Contact Us</h2>
+        <hr class="title-underline">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos  laudantium blanditiis repellat veniam <br> molestias mollitia, nihil unde. </p>
+    </div>
+
+    <div class="container">
+        <div class="form-section">
+            <div class="contact-info">
+                <p><strong>Mobile Number</strong><br>+135 773 321 4442</p>
+                <p><strong>Email Address</strong><br>demo@demo.com</p>
+            </div>
+            <h2>Make An Appointment</h2>
+            <form class="form-element">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+            </form>
+        </div>
+        
+        <div class="map-section">
+            <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.0876688001554!2d35.29540987649828!3d37.03155597218204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1528892a2fc97ed1%3A0x60c96c565fe34461!2sToros%2C%20%C5%9Eht.%20Ebubekir%20Durmu%C5%9F%20Sk.%2C%2001170%20%C3%87ukurova%2FAdana!5e0!3m2!1str!2str!4v1742540275515!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section><!--contact bitiş kısmı-->
+
+<footer class="footer"><!--footer başlangıç kısmı-->
+
+    <div class="footer-title">
+        <img src="./resimler/Resimler/logo.png" alt="logo">
+        <p> <strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam corrupti aliquid temporibus mollitia tempore ratione eius enim quis, eaque, quam aspernatur impedit nulla voluptates voluptatum dignissimos neque labore quo ipsa?</strong></p>
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="div-left">
+            <h3>Information</h3>
+            <a href="#">About us</a>
+            <a href="#our-clases">Classes</a>
+            <a href="#">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="div-right">
+            <h3>Helpful Links</h3>
+            <a href="#">Services</a>
+            <a href="#">Supports</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </div>
+</footer><!--footer bitiş kısmı-->
+
+<script src="https://kit.fontawesome.com/60f7f7b9bc.js" crossorigin="anonymous"></script> <!--emoji ekleme kısmı-->
+<script src="./script.js"></script><!--JavaScript dosyası kısmı-->
+</body>
+</html>

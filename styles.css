@@ -1,0 +1,817 @@
+/*VERMİŞ OLDUĞUNUZ NAVBAR ZORUNLU RENK KODU #355592 RGB FORMATI İLE DÖNÜŞTÜRÜLÜP ENTEGRE EDİLMİŞTİR*/
+*{ /*Genel boyut ayarı*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body{ /*Genel body ayarı*/
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+ }
+
+.header{ /*header ayarı*/
+    position: fixed;
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#hamburger{ /*hamburger menü ayarı*/
+    display: none;
+}
+
+.navbar{ /*navbar ayarı*/
+    margin-right: 20%;
+}
+
+.navbar-scrolled { /*navbar scroll olduğunda şefaflık ayarı*/
+    
+    background-color: rgba(53, 85, 146, 0.5) !important; 
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+.navbar a{ /*navbar a etiketi ayarı*/
+    font-weight: bolder;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    margin-left: 40px;
+ }
+
+#join{ /*join button özel renk*/
+    padding: 5px;
+    border-radius: 5px;
+    background-color:rgb(233, 165, 18);
+ }
+
+.navbar a::before { /*navbar a etiketi öncesi ayarı*/
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: bisque;
+    transition: .3s;
+ }
+
+.navbar a:hover::before { /*navbar a etiketi öncesi pointer ayarı*/
+    width: 100%;
+ }
+
+.hero-texts{ /*hero text yükseklik genişlik ayarı*/
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 10%;
+ }
+
+.hero h3{ /*hero h3 still ayarı*/
+    display: flex;
+    justify-self: baseline;
+    background-color: rgb(66, 66, 230);
+    border-radius: 5px;
+    padding: 8px;
+    text-shadow: 2px 2px black ;
+    margin-bottom: 10px;
+}
+
+.hero-h2{ /*hero h2 still ayarı*/
+    display: flex;
+    justify-self: baseline;
+    font-size: 100px;
+    color: white;
+    text-shadow: 2px 2px black ;
+    font-style: inherit;
+}
+
+.hero-p{ /*hero p still ayarı*/
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.bg1{ /*backgroun img ayarı*/
+    background-image: url("./resimler/Resimler/hero-man.jpg");
+    height: 100vh;
+}
+
+.hero-title-btn{ /*hero başlık buttonları ayarı*/
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.hero-title-btn button:hover{  /*hero başlık buttonları hover olduğundaki ayarı*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+}
+
+.hero-title-btn .sign-up:hover{ /*hero başlık signup hover olduğunkdai ayarı*/
+    background-color: rgb(93, 150, 255);
+}
+
+.hero-title-btn .details:hover{ /*hero başlık details hover olduğunkdai ayarı*/
+    background-color: rgba(175, 175, 175, 0);
+}
+
+.sign-up{ /*sign up still ayarı*/
+    border: none;
+    background-color: rgb(53, 85, 146);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 30px;
+    margin: 1% 2%;
+    cursor: pointer;
+}
+
+.details{ /*details still ayarı*/
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 1% 2%;
+    cursor: pointer;
+}
+
+.stats{ /*stats still ayarı*/
+    background-color: rgb(241, 248, 255);
+    display: flex;
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.stats div{ /*stats div içi still ayarı*/
+    gap: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    padding: 40px 80px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+}
+.stats div p{ /*stats div içi paragarf ayarı*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    color: rgb(69, 80, 136);
+    font-weight: 500;
+}
+.stats div p span{ /*stats div içi pargraf içindeki span için renk ayarı*/
+    color:black;
+}
+.classes{/*classes boyutlandırma ve arkaplan ayarı*/
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    background: linear-gradient(115deg, white 50%, #f5f5f5 50%);;
+}
+
+.title-underline { /*başlıkların altındak çizgi ayarı*/
+    border-radius: 20px;
+    width: 120px;
+    height: 10px;
+    background-color: #FFA500;
+    border: none;
+    margin: 25px auto;
+  }
+  .classes-btn{ /*classes button sekmesi ayarları*/
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    border: none;
+    align-items: center;
+  }
+ .classes-btn button{ /*classes button direkt button ayarı*/
+    border: none;
+    background-color: rgb(53, 85, 146);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+ }
+ .classes-bottom{ /*classes bottom ayarı*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    align-items: center;
+ }
+ .classes-bottom-txt{ /*classes bottom yazıları ayarı*/
+    color: rgb(76, 76, 76);
+    padding: 20px;
+ }
+ .classes-bottom-txt h3{ /*classes bottom txt h3 ayarı*/
+    padding-bottom: 15px;
+    font-size: 40px;
+ }
+ .classes-imgs{ /*classes img ayarları*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+ }
+ .classes-bottom-txt p{ /*classes bottom txt paragarf ayarı*/
+    padding-bottom: 30px;
+    font-size: 20px;
+ }
+ .classes-bottom img{ /*classes bottom img ayarları*/
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+ }
+.classes-bottom-paragraf{/*classes bottom paragarf kısmı*/
+  line-height: 50px;
+}
+.bmi-calculator{ /*bmi hesaplayıcı ayarı*/
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(76, 76, 76);
+}
+.bmi-text h2{ /*bmi text h2 ayarı*/
+    padding-top: 5%;
+    font-size: 40px;
+    color: rgb(49, 83, 147);
+    text-align: left;
+}
+.bmi-text p{  /*bmi text paragraf ayarı*/
+    margin-top: 5%;
+    font-size: 20px;
+    color: rgb(79, 79, 79);
+    text-align: left;
+}
+.bmi-text input{ /*bmi text input ayarı*/
+    background-color: white;
+    width: 80%;
+    border: 2px solid black;
+}
+.div-input{ /*div input*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2%;
+    
+}
+.div-input span{ /*div input span ayarı*/
+    margin: 2%;
+    font-weight: 20px;
+    font-size: larger;
+}
+.your-bmi{ /*your bmi ayarı*/
+    padding-top: 3%;
+    font-size: 20px;
+    color: rgb(76, 76, 76);
+    text-align: center;
+}
+
+.bmi-image-container{ /*bmi img container ayarları*/
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+#result{ /*bmi hesaplama sonucu ayarı (bu bölümü kaldırılacak unutma !!)*/
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+}
+.our-best-trainers{ /*our best trainers genel ayar*/
+   background-color: rgb(241, 248, 255);
+   margin-top: 5%;
+   padding-bottom:5%;
+}
+.trainers{ /*trainers genel ayar*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    gap: 40px;
+}
+.trainer-wrapper{ /*trainer wrapper genel ayar*/
+    position: relative;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+.trainer-wrapper::before { /*trainers wrapper öncesi*/
+    content: "";
+    position: absolute;
+    height: 2%;
+    width: 35%;
+    background-color: rgb(49, 83, 147);
+    top: -2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+.trainer-wrapper::after { /*trainers sonrası*/
+    content: "";
+    position: absolute;
+    height: 2%;
+    width: 35%;
+    background-color: rgb(49, 83, 147);
+    bottom: -2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.side-box::before { /*trainers dış katman öncesi genel ayar*/
+    content: "";
+    position: absolute;
+    height: 2%;
+    width: 35%;
+    background-color: rgb(49, 83, 147);
+    top: 50%;
+    left: -19.5%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transform: rotate(90deg);
+}
+.side-box::after {/*trainers dış katman sonrası genel ayar*/
+    content: "";
+    position: absolute;
+    height: 2%;
+    width: 35%;
+    background-color: rgb(49, 83, 147);
+    top: 50%;
+    right: -17.5%;
+    transform: translateY(-50%);
+    z-index: 1;
+    rotate: 90deg;
+}
+
+.trainer-wrapper:hover .side-box::after{ /*trainers wrapper hover olduğunda side box sonrası*/
+    width: 50%;
+    right: -25%;
+    transition: 0.4s ease-in-out;
+}
+.trainer-wrapper:hover .side-box::before{ /*trainers wrapper hover olduğunda side box öncesi*/
+    width: 50%;
+    left: -27%;
+    transition: 0.4s ease-in-out;
+}
+.trainer-wrapper:hover::after{ /*trainers wrapper hover olduğunda sonrası*/
+    width:50%;
+    bottom: -2%;
+    transition: 0.4s ease-in-out;
+}
+
+.trainer-wrapper img{ /*trainers wrapper img ayarı*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.trainer-info p{ /*trainers info paragraf*/
+    font-size: 14px;
+    font-weight: 400;
+}
+.trainer-info h5{ /*trainers info h5*/
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.trainer-info { /*trainers info*/
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px); 
+    width: 80%;
+    background: rgba(53, 85, 146, 0.9); 
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    transition: transform 0.4s ease-in-out;
+    z-index: -1;
+  }
+  .trainer-wrapper:hover .trainer-info{ /*trainers wrapper hover olduğunda trainer info clas ayarı*/
+    z-index: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  .trainer-wrapper:hover { /*trainers wrapper hover olduğunda ayarı*/
+    border: solid;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: rgb(49, 83, 147);
+}
+.title h2{ /*başlık h2 genel ayar*/
+    padding-top: 5%;
+    font-size: 40px;
+    color: rgb(49, 83, 147);
+    text-align: center;
+}
+.title p{ /*başlık paragraf genel ayar*/
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-top: 2%;
+    font-size: 20px;
+    color: rgb(79, 79, 79);
+    text-align: center;
+}
+.purchase-texts{ /*purchase texts yazı ayarı*/
+    color: black;
+    text-align: center;
+    font-size: large;
+}
+.purchase-texts h4{  /*purchase text h4 ayarı*/
+    font-size: larger;
+}
+.content-purchase { /*content purchase ayarı*/
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.content-purchase img{ /*contenct resim ayarı*/
+   width: 100%;
+} 
+.card{ /*card genel ayar*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+.card:hover{ /*card hover olduğunda ayarı*/
+    box-shadow:0 16px 32px rgba(0, 0, 0, 1); 
+    transition-duration: 500ms;
+}
+.credi{ /*credi genel ayar*/
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.credi i{ /*card i ayarı*/
+    display: flex;
+    position: absolute;
+    margin-left: 2%;
+}
+.reviwe-client{ /*reviwe client backgorund ayarı*/
+    background-color: rgb(241, 248, 255)
+}
+.reviwe-area{ /*reviwe area boyut ayarları*/
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.review-title{ /*reivew başlık ayarı*/
+    font-size: large;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.review-title h4 { /*reviwe başlık h4 ayarları*/
+    margin-left: 5%;
+}
+.reviwe-area img{ /*reviwe img keskinlik ayarı*/
+    border-radius: 200px;
+}
+.review-parag{ /*reviwe paragraf ayarı*/
+    background-color: rgb(49, 83, 147);
+    margin-bottom: 10%;
+    padding: 2% 2%;
+}
+.triangle { /*üçgen ayarı*/
+    position: relative; 
+    padding: 20px; 
+    background-color: rgb(49, 83, 147); 
+  }
+  
+  .triangle p { /*üçgen parafraf margin ayarı*/
+    margin: 0; 
+  }
+  
+  .triangle::before{ /*üçgen öncesi */
+    content: ''; 
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent; 
+    border-top: 40px solid rgb(62, 115, 212);
+    opacity: 0.5;
+  }
+  .triangle::after { /*üçgen sonrası*/
+    content: ''; 
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 40px solid transparent; 
+    border-top: 40px solid rgb(114, 149, 214);
+    opacity: 0.5;
+  }
+  
+  .triangle::before { /*üçgen öncesi 2. ayar */
+    bottom: -40px; 
+    left: 0;
+  }
+  
+  .triangle::after {  /*üçgen sonrası 2. ayar*/
+    bottom: -40px; 
+    right: 0; 
+  } 
+.contact-us{/*iletişim kısmı genel ayar*/
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-top: 2%; 
+}
+
+.title p{ /*başlık paragrafları için genel ayar*/
+    margin-bottom: 5%;
+}
+
+.container { /*container yapısı genel ayar*/
+    display: flex;
+    width: 100%;
+    margin-top: 2%; 
+}
+
+.form-section { /*form alanı boyut ayarı */
+    width: 50%; 
+    padding-right: 20px;
+}
+
+.contact-info p { /*iletişim kısmı paragraf ayarı*/
+    color: rgb(79, 79, 79);
+    margin-bottom: 10px;
+}
+
+h2 { /*h2 genel ayar*/
+    color: rgb(79, 79, 79);
+    margin: 20px 0;
+}
+
+input, textarea { /*inout ve text area genel ayar*/
+    background-color:rgb(241, 248, 255);
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+textarea{ /*text area genel ayar */
+    resize: vertical;
+    height: 100px;
+    margin-bottom: 0;
+}
+
+.map-section { /*map ayarı*/
+    width: 50%;
+}
+ 
+.footer{ /*footer kısmı genel ayar*/
+    width: 100%;
+    padding-right: 15%;
+    padding-left: 15%;
+    margin-top: 2%; 
+    background-color:rgb(49, 83, 147);
+}
+.footer-bottom{ /*footer alt kısım genel ayar*/
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-bottom a{ /*footer a etiketi ayarı*/
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.footer-bottom .div-left { /*footer bottom kısmı sol div ayarı*/
+    display: flex;
+    flex-direction: column;
+}
+.footer-bottom .div-right { /*footer bottom kısmı sağ div ayarı*/
+    display: flex;
+    flex-direction: column;
+}
+
+.btn.active{ /*button aktifkenki genel ayar */
+background-color: #FFA500;
+transition: 0.3 ease;
+border: 2px solid #ffc355;
+box-shadow: 0px 4px 10px rgba(255, 123, 0, 0.4);
+position: relative;
+}
+
+.btn::after{ /*button sonrası ayarları*/
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid orange;
+}
+#bmi-arrow { /*bmi ok simgesi kısmı*/
+    position: absolute;
+    bottom: -12%; 
+    left: 9%; 
+    font-size: 24px;
+    color: red;
+    transition: left 0.5s ease-in-out;
+}
+.bmi-image-container { /*bmi resim container ayarı*/
+    position: relative;
+    width: 100%;
+}
+.hidden{ /*hamburger menü gizleme kısmı*/
+    display: none;
+}
+ 
+@media (max-width: 996px){/* telefon (567 px) için genel ayar*/
+    .stats{/*stats telefeon genel ayar*/
+       flex-direction: column;
+    }
+    .container {  /*container telefeon genel ayar*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero {/*hero telefeon genel ayar*/
+        display: flex;
+        flex-direction: column;
+    }
+    .classes-bottom{ /*classes bottom telefeon genel ayar*/
+        flex-direction: column;
+}
+
+.bmi-calculator{ /*bmi hesaplayıcısı telefeon genel ayar*/
+    flex-direction: column;
+    
+}
+.bmi-image{ /*bmi resim telefeon genel ayar*/
+    width: 100%;
+}
+.trainers-imges{ /*trainers resimleri telefeon genel ayar*/
+    flex-direction: column;
+    align-items: center;
+}
+.content-purchase { /*content satın alım kısmı telefeon genel ayar*/
+    flex-direction: column;
+    align-items: center;
+}
+.reviwe-area { /*review telefeon genel ayar*/
+    flex-direction: column;
+    align-items: center;
+}
+.navbar{ /*navbar telefeon genel ayar*/
+    display: none;
+}
+.classes-btn button{/*classes button telefeon genel ayar*/
+    font-size: 16px;
+ }
+ .hero h2{/*hero h2 telefeon genel ayar*/
+    font-size: 50px;
+    
+ }
+ .hero h3{/*hero h3 telefeon genel ayar*/
+    margin-top: 30%;
+ }
+ .hero-title-btn{ /*hero başlık buttonları telefeon genel ayar*/
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+ }
+ .hero-title-btn button{ /*hero başlık buttonları telefeon genel ayar*/
+    text-align: left;
+ }
+ .bg1 { /*arkaplan resmi telefeon genel ayar*/
+    background-size: cover;
+    background-position: center;
+ }
+ .br-header{ /*hamburger menü gizleme telefeon genel ayar*/
+    display: none;
+}
+ .header { /*header telefeon genel ayar*/
+    padding-left: 5%;
+ }
+ .hero-texts{/*hero yazı telefeon genel ayar*/
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.classes-btn{/*classes buttonları telefeon genel ayar*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+.bmi-calculator input{ /*bmi hesaplayıcısı inputları telefeon genel ayar*/
+    width: 50%;
+    border: 2px solid black;
+    background-color: white;
+    margin: 2%;
+}
+.trainers {  /*trainers telefeon genel ayar*/
+    flex-direction: column;
+}
+.container { /*container telefeon genel ayar*/
+    display: flex;
+    align-items: left;
+    margin: 0;
+    
+}
+.form-section{ /*form section telefeon genel ayar*/
+    width: 100%;
+    height: 100%;
+}
+.map-section {/*map kısmı telefeon genel ayar*/
+    width: 100%;
+    height: 100%;
+    padding-right: 5%;
+    margin-top: 5%;
+}
+.div-input{/*divlerin input kısmı telefeon genel ayar*/
+   display: flex;
+   flex-direction: column;
+}
+.input-inline{ /*inputların iç telefeon genel ayar*/
+    width: 100%;
+    height: 100%;
+}
+#hamburger{/*hamburger telefeon genel ayar*/
+    display: block;
+    transform: scale(2);
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.7);
+}
+.navbar-tel {/*navbar telefeon genel ayar*/
+    position: fixed;
+    background-color: rgb(70, 99, 153);
+    right: -100%;
+    margin-top: 65%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 0px;
+    transition: 0.5s;
+    width: 100%;
+    z-index: 100;
+}
+.navbar-tel.active{ /*navbar telefon açıkken telefeon genel ayar*/
+    right: 0;
+}
+.navbar-tel a{/*navbar a etiketi telefeon genel ayar*/
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5rem;
+}
+.navbar-tel li{/*navbar tel list telefeon genel ayar*/
+    margin-top: 15px; 
+}
+.navbar-tel li:nth-child(1){ /*navbar li nth telefeon genel ayar*/
+    margin-top: -10px; 
+    
+}
+}
